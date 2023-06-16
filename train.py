@@ -201,10 +201,10 @@ def main():
 
     # opt = parser.parse_args()
     class Args:
-        train_src_txt_filepath = '/home/uih/JYL/GitHub/Transformer/data/dev_zh/newsdev2017-enzh-ref.zh.sgm.txt'
-        train_tgt_txt_filepaht = '/home/uih/JYL/GitHub/Transformer/data/dev_en/newsdev2017-zhen-ref.en.sgm.txt'
-        val_src_txt_filepath = '/home/uih/JYL/GitHub/Transformer/data/dev_zh/newsdev2017-enzh-ref.zh.sgm.txt'
-        val_tgt_txt_filepaht = '/home/uih/JYL/GitHub/Transformer/data/dev_en/newsdev2017-zhen-ref.en.sgm.txt'
+        train_src_txt_filepath = './data/dev_zh/newsdev2017-enzh-ref.zh.sgm.txt'
+        train_tgt_txt_filepaht = './data/dev_en/newsdev2017-zhen-ref.en.sgm.txt'
+        val_src_txt_filepath = './data/dev_zh/newsdev2017-enzh-ref.zh.sgm.txt'
+        val_tgt_txt_filepaht = './data/dev_en/newsdev2017-zhen-ref.en.sgm.txt'
         seed = 1234
         dropout = 0.1
         epoch = 100
@@ -220,7 +220,7 @@ def main():
         embs_share_weight = False
         proj_share_weight = False
         scale_emb_or_prj = 'prj'
-        output_dir = "/home/uih/JYL/GitHub/Transformer/output"
+        output_dir = "./output"
         save_mode = 'best'
         no_cuda = False
         label_smoothing = False

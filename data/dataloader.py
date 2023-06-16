@@ -114,8 +114,8 @@ class Collator:
         return {'src': src_batch.permute(1, 0), 'trg': tgt_batch.permute(1, 0)}
     
 
-def build_wmt_dataloader(src_spacy_model_name='zh_core_web_md', 
-                         tgt_spacy_model_name='en_core_web_md', 
+def build_wmt_dataloader(src_spacy_model_name='zh_core_web_sm', 
+                         tgt_spacy_model_name='en_core_web_sm', 
                          src_txt_filepath='', 
                          tgt_txt_filepath='', 
                          batch_size=2048, 
